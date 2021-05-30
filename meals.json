@@ -1,0 +1,257 @@
+{
+      "<class 'datetime.date'>": [
+            {
+                  "Chewing gum": "100000"
+            },
+            {
+                  "203": {
+                        "value": 0.0,
+                        "name": "Protein",
+                        "unit": "g",
+                        "nutrient_id": 203.0
+                  },
+                  "204": {
+                        "value": 300.0,
+                        "name": "Fat",
+                        "unit": "g",
+                        "nutrient_id": 204.0
+                  },
+                  "205": {
+                        "value": 96700.0,
+                        "name": "Carbs",
+                        "unit": "g",
+                        "nutrient_id": 205.0
+                  },
+                  "208": {
+                        "value": 360000.0,
+                        "name": "Calories",
+                        "unit": "kcal",
+                        "nutrient_id": 208.0
+                  },
+                  "255": {
+                        "value": 2600.0,
+                        "name": "Water",
+                        "unit": "g",
+                        "nutrient_id": 255.0
+                  },
+                  "262": {
+                        "value": 0.0,
+                        "name": "Caffeine",
+                        "unit": "mg",
+                        "nutrient_id": 262.0
+                  },
+                  "263": {
+                        "value": 0.0,
+                        "name": "Theobromine",
+                        "unit": "mg",
+                        "nutrient_id": 263.0
+                  },
+                  "269": {
+                        "value": 66080.0,
+                        "name": "Sugar",
+                        "unit": "g",
+                        "nutrient_id": 269.0
+                  },
+                  "291": {
+                        "value": 2400.0,
+                        "name": "Fiber",
+                        "unit": "g",
+                        "nutrient_id": 291.0
+                  },
+                  "301": {
+                        "value": 0.0,
+                        "name": "Calcium",
+                        "unit": "mg",
+                        "nutrient_id": 301.0
+                  },
+                  "303": {
+                        "value": 0.0,
+                        "name": "Iron",
+                        "unit": "mg",
+                        "nutrient_id": 303.0
+                  },
+                  "304": {
+                        "value": 0.0,
+                        "name": "Magnesium",
+                        "unit": "mg",
+                        "nutrient_id": 304.0
+                  },
+                  "305": {
+                        "value": 0.0,
+                        "name": "Phosphorus",
+                        "unit": "mg",
+                        "nutrient_id": 305.0
+                  },
+                  "306": {
+                        "value": 2000.0,
+                        "name": "Potassium",
+                        "unit": "mg",
+                        "nutrient_id": 306.0
+                  },
+                  "307": {
+                        "value": 1000.0,
+                        "name": "Sodium",
+                        "unit": "mg",
+                        "nutrient_id": 307.0
+                  },
+                  "309": {
+                        "value": 0.0,
+                        "name": "Zinc",
+                        "unit": "mg",
+                        "nutrient_id": 309.0
+                  },
+                  "312": {
+                        "value": 0.0,
+                        "name": "Copper",
+                        "unit": "mg",
+                        "nutrient_id": 312.0
+                  },
+                  "313": {
+                        "value": 5000.0,
+                        "name": "Fluoride",
+                        "unit": "\u00b5g",
+                        "nutrient_id": 313.0
+                  },
+                  "315": {
+                        "value": 0.0,
+                        "name": "Manganese",
+                        "unit": "mg",
+                        "nutrient_id": 315.0
+                  },
+                  "317": {
+                        "value": 600.0,
+                        "name": "Selenium",
+                        "unit": "\u00b5g",
+                        "nutrient_id": 317.0
+                  },
+                  "318": {
+                        "value": 0.0,
+                        "name": "Vitamin A",
+                        "unit": "IU",
+                        "nutrient_id": 318.0
+                  },
+                  "323": {
+                        "value": 0.0,
+                        "name": "Vitamin E",
+                        "unit": "mg",
+                        "nutrient_id": 323.0
+                  },
+                  "324": {
+                        "value": 0.0,
+                        "name": "Vitamin D (D2 + D3), International Units",
+                        "unit": "IU",
+                        "nutrient_id": 324.0
+                  },
+                  "401": {
+                        "value": 0.0,
+                        "name": "Vitamin C",
+                        "unit": "mg",
+                        "nutrient_id": 401.0
+                  },
+                  "404": {
+                        "value": 0.0,
+                        "name": "Vitamin B-1",
+                        "unit": "mg",
+                        "nutrient_id": 404.0
+                  },
+                  "405": {
+                        "value": 0.0,
+                        "name": "Vitamin B-2",
+                        "unit": "mg",
+                        "nutrient_id": 405.0
+                  },
+                  "406": {
+                        "value": 0.0,
+                        "name": "Vitamin B-3",
+                        "unit": "mg",
+                        "nutrient_id": 406.0
+                  },
+                  "410": {
+                        "value": 0.0,
+                        "name": "Vitamin B-5",
+                        "unit": "mg",
+                        "nutrient_id": 410.0
+                  },
+                  "415": {
+                        "value": 0.0,
+                        "name": "Vitamin B-6",
+                        "unit": "mg",
+                        "nutrient_id": 415.0
+                  },
+                  "417": {
+                        "value": 0.0,
+                        "name": "Vitamin B-9",
+                        "unit": "\u00b5g",
+                        "nutrient_id": 417.0
+                  },
+                  "418": {
+                        "value": 0.0,
+                        "name": "Vitamin B-12",
+                        "unit": "\u00b5g",
+                        "nutrient_id": 418.0
+                  },
+                  "421": {
+                        "value": 0.0,
+                        "name": "Choline",
+                        "unit": "mg",
+                        "nutrient_id": 421.0
+                  },
+                  "430": {
+                        "value": 0.0,
+                        "name": "Vitamin K",
+                        "unit": "\u00b5g",
+                        "nutrient_id": 430.0
+                  },
+                  "601": {
+                        "value": 0.0,
+                        "name": "Cholesterol",
+                        "unit": "mg",
+                        "nutrient_id": 601.0
+                  },
+                  "605": {
+                        "nutrient_id": 605,
+                        "name": "Trans Fat",
+                        "group": "Lipids",
+                        "unit": "g",
+                        "value": 0.0
+                  },
+                  "606": {
+                        "value": 42.0,
+                        "name": "Saturated Fat",
+                        "unit": "g",
+                        "nutrient_id": 606.0
+                  },
+                  "621": {
+                        "value": 0.0,
+                        "name": "DHA",
+                        "unit": "g",
+                        "nutrient_id": 621.0
+                  },
+                  "629": {
+                        "value": 0.0,
+                        "name": "EPA",
+                        "unit": "g",
+                        "nutrient_id": 629.0
+                  },
+                  "645": {
+                        "value": 79.0,
+                        "name": "Monounsaturated Fat",
+                        "unit": "g",
+                        "nutrient_id": 645.0
+                  },
+                  "646": {
+                        "value": 137.0,
+                        "name": "Polyunsaturated Fat",
+                        "unit": "g",
+                        "nutrient_id": 646.0
+                  },
+                  "851": {
+                        "nutrient_id": 851,
+                        "name": "ALA",
+                        "group": "Lipids",
+                        "unit": "g",
+                        "value": 0.0
+                  }
+            },
+            [
+                  
