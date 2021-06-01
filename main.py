@@ -31,8 +31,9 @@ while query != "Exit":
             #TODO
             #Why is this API call so slow
             #Returns list of food objects
+            
             new_food_data = client.get_foods({str(selected_item["fdcId"]):int(value_query)})
-
+            
             new_meal = NewMeal(new_food_data, value_query)
             new_meal.show_nutrients()
             
@@ -49,9 +50,9 @@ if save == "Y" or save == "y":
     
     out_file.close()
 
-    # #TODO implement meals
-    # if selected_item:
-    #     meal.add(selected_item)
+    # #TODO improper closure in json
+        #how to save the files properly and cleanly
+        #how to read back in
     
     
     #Respond to the 
