@@ -20,23 +20,29 @@ from noms.objects.diary import Diary
 
 #Restructure Diary, etc. file structure to be more sensible
 #Rebuild to be able to remove/add food for days
+#Day is currently never changed. tkcalendar?
 
 #read in results from JSONs for expansion of existing diaries, etc.
 
 
-
+#client that accesses the FoodCentral API 
 client = noms.Client("aOcV0EPxHSAA0bBdFB6b6smqiThjul1LLgiHIDGf")
 
+#Temp file for holding results of API calls
 search_results = None
+
+#Diary object for holding all information and for exporting/saving
 diary = Diary()
 
+#TKInter GUI main window
 gui = tk.Tk()
 gui.geometry('1200x800')
 gui.title("Noms Calorie Calculator and Food Diary")
 
-
+#StringVar holding food query to look for in API
 query = tk.StringVar(gui)
-selection = tk.StringVar(gui)
+
+#StringVar holding amount of food queried from API
 amount = tk.StringVar(gui)
 
 #Search Descriptor
@@ -73,13 +79,13 @@ submitButton = tk.Button(gui, height = 1,
                  command = lambda:submitRequest())
 submitButton.grid(column=2,row=12)
 
-
+#Label containing all foods entered into the diary
 foodsLabel = tk.Label(gui, text="No foods entered yet", width =50, height = 30,
                       justify = tk.LEFT,
                       wraplength=300)
 foodsLabel.grid(column=1, row=1, padx=10, pady=10)
 
-
+#Label containing all nutrients contained within the diary
 nutrientsLabel = tk.Label(gui, text="No foods entered yet", width =50, height = 30, 
                           justify= tk.LEFT,
                           wraplength=300)
@@ -112,7 +118,7 @@ def foodInput():
     
     query.set("")
     
-    
+
 def submitRequest():    
     new_food_data = client.get_foods({str(search_results.json["items"][searchResultsBox.current()]["fdcId"]):int(amount.get())})
             
@@ -128,6 +134,9 @@ def submitRequest():
     foodsLabel["text"] = meals
     nutrientsLabel["text"] = diary.printNutrients()
     
+#Message asking to save on close.
+#TODO
+#Does not allow for a cancel of close. Potential issue
 def save():
     if tk.messagebox.askokcancel("Quit", "Do you want to save?"):
         out_file = open("meals.json", "w")
