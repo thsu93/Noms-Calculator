@@ -1,109 +1,109 @@
 {
-      "2021-06-03": [
+      "2021-06-22": [
             {
-                  "Tea, hot, herbal": "100",
-                  "Steak tartare": "100",
-                  "Ice cream sundae cone": "100"
+                  "Cream, fluid, light (coffee cream or table cream)": 30,
+                  "Lamb, New Zealand, imported, testes, raw": 150,
+                  "Fudge, chocolate, chocolate-coated": 188
             },
             {
                   "203": {
-                        "value": 18.67,
+                        "value": 25.451600000000003,
                         "name": "Protein",
                         "unit": "g",
                         "nutrient_id": 203.0
                   },
                   "204": {
-                        "value": 27.84,
+                        "value": 39.7184,
                         "name": "Fat",
                         "unit": "g",
                         "nutrient_id": 204.0
                   },
                   "205": {
-                        "value": 30.650000000000002,
+                        "value": 135.7468,
                         "name": "Carbs",
                         "unit": "g",
                         "nutrient_id": 205.0
                   },
                   "208": {
-                        "value": 452.0,
+                        "value": 1002.74,
                         "name": "Calories",
                         "unit": "kcal",
                         "nutrient_id": 208.0
                   },
                   "255": {
-                        "value": 220.81,
+                        "value": 163.4016,
                         "name": "Water",
                         "unit": "g",
                         "nutrient_id": 255.0
                   },
                   "262": {
-                        "value": 0.0,
+                        "value": 22.56,
                         "name": "Caffeine",
                         "unit": "mg",
                         "nutrient_id": 262.0
                   },
                   "263": {
-                        "value": 2.0,
+                        "value": 285.76,
                         "name": "Theobromine",
                         "unit": "mg",
                         "nutrient_id": 263.0
                   },
                   "269": {
-                        "value": 21.73,
+                        "value": 126.36539999999998,
                         "name": "Sugar",
                         "unit": "g",
                         "nutrient_id": 269.0
                   },
                   "291": {
-                        "value": 1.4,
+                        "value": 4.136,
                         "name": "Fiber",
                         "unit": "g",
                         "nutrient_id": 291.0
                   },
                   "301": {
-                        "value": 94.0,
+                        "value": 205.88,
                         "name": "Calcium",
                         "unit": "mg",
                         "nutrient_id": 301.0
                   },
                   "303": {
-                        "value": 2.55,
+                        "value": 5.372199999999999,
                         "name": "Iron",
                         "unit": "mg",
                         "nutrient_id": 303.0
                   },
                   "304": {
-                        "value": 39.0,
+                        "value": 101.92,
                         "name": "Magnesium",
                         "unit": "mg",
                         "nutrient_id": 304.0
                   },
                   "305": {
-                        "value": 298.0,
+                        "value": 506.66,
                         "name": "Phosphorus",
                         "unit": "mg",
                         "nutrient_id": 305.0
                   },
                   "306": {
-                        "value": 476.0,
+                        "value": 823.7,
                         "name": "Potassium",
                         "unit": "mg",
                         "nutrient_id": 306.0
                   },
                   "307": {
-                        "value": 260.0,
+                        "value": 303.5,
                         "name": "Sodium",
                         "unit": "mg",
                         "nutrient_id": 307.0
                   },
                   "309": {
-                        "value": 4.220000000000001,
+                        "value": 4.569599999999999,
                         "name": "Zinc",
                         "unit": "mg",
                         "nutrient_id": 309.0
                   },
                   "312": {
-                        "value": 0.177,
+                        "value": 0.8507399999999999,
                         "name": "Copper",
                         "unit": "mg",
                         "nutrient_id": 312.0
@@ -116,148 +116,142 @@
                         "value": 0.0
                   },
                   "315": {
-                        "nutrient_id": 315,
+                        "value": 0.045000000000000005,
                         "name": "Manganese",
-                        "group": "Minerals",
                         "unit": "mg",
-                        "value": 0.087
+                        "nutrient_id": 315.0
                   },
                   "317": {
-                        "value": 19.7,
+                        "value": 46.507999999999996,
                         "name": "Selenium",
                         "unit": "\u00b5g",
                         "nutrient_id": 317.0
                   },
                   "318": {
-                        "nutrient_id": 318,
+                        "value": 186.6,
                         "name": "Vitamin A",
-                        "group": "Vitamins",
                         "unit": "IU",
-                        "value": 410.0
+                        "nutrient_id": 318.0
                   },
                   "323": {
-                        "value": 0.55,
+                        "value": 1.0274,
                         "name": "Vitamin E",
                         "unit": "mg",
                         "nutrient_id": 323.0
                   },
                   "324": {
-                        "nutrient_id": 324,
-                        "name": "Vitamin D",
-                        "group": "Vitamins",
+                        "value": 13.2,
+                        "name": "Vitamin D (D2 + D3), International Units",
                         "unit": "IU",
-                        "value": 4.0
+                        "nutrient_id": 324.0
                   },
                   "401": {
-                        "value": 5.2,
+                        "value": 0.24,
                         "name": "Vitamin C",
                         "unit": "mg",
                         "nutrient_id": 401.0
                   },
                   "404": {
-                        "value": 0.156,
+                        "value": 0.57716,
                         "name": "Vitamin B-1",
                         "unit": "mg",
                         "nutrient_id": 404.0
                   },
                   "405": {
-                        "value": 0.392,
+                        "value": 0.65812,
                         "name": "Vitamin B-2",
                         "unit": "mg",
                         "nutrient_id": 405.0
                   },
                   "406": {
-                        "value": 4.649,
+                        "value": 3.09232,
                         "name": "Vitamin B-3",
                         "unit": "mg",
                         "nutrient_id": 406.0
                   },
                   "410": {
-                        "nutrient_id": 410,
+                        "value": 1.44,
                         "name": "Vitamin B-5",
-                        "group": "Vitamins",
                         "unit": "mg",
-                        "value": 0.356
+                        "nutrient_id": 410.0
                   },
                   "415": {
-                        "value": 0.356,
+                        "value": 0.09842000000000001,
                         "name": "Vitamin B-6",
                         "unit": "mg",
                         "nutrient_id": 415.0
                   },
                   "417": {
-                        "value": 46.0,
+                        "value": 11.879999999999999,
                         "name": "Vitamin B-9",
                         "unit": "\u00b5g",
                         "nutrient_id": 417.0
                   },
                   "418": {
-                        "value": 2.16,
+                        "value": 15.4222,
                         "name": "Vitamin B-12",
                         "unit": "\u00b5g",
                         "nutrient_id": 418.0
                   },
                   "421": {
-                        "value": 139.70000000000002,
+                        "value": 44.324,
                         "name": "Choline",
                         "unit": "mg",
                         "nutrient_id": 421.0
                   },
                   "430": {
-                        "value": 56.3,
+                        "value": 5.585999999999999,
                         "name": "Vitamin K",
                         "unit": "\u00b5g",
                         "nutrient_id": 430.0
                   },
                   "601": {
-                        "value": 172.0,
+                        "value": 639.1600000000001,
                         "name": "Cholesterol",
                         "unit": "mg",
                         "nutrient_id": 601.0
                   },
                   "605": {
-                        "nutrient_id": 605,
+                        "value": 0.225,
                         "name": "Trans Fat",
-                        "group": "Lipids",
                         "unit": "g",
-                        "value": 0.0
+                        "nutrient_id": 605.0
                   },
                   "606": {
-                        "value": 7.926,
+                        "value": 23.16638,
                         "name": "Saturated Fat",
                         "unit": "g",
                         "nutrient_id": 606.0
                   },
                   "621": {
-                        "value": 0.012,
+                        "value": 0.26849999999999996,
                         "name": "DHA",
                         "unit": "g",
                         "nutrient_id": 621.0
                   },
                   "629": {
-                        "value": 0.003,
+                        "value": 0.024,
                         "name": "EPA",
                         "unit": "g",
                         "nutrient_id": 629.0
                   },
                   "645": {
-                        "value": 7.755000000000001,
+                        "value": 9.81908,
                         "name": "Monounsaturated Fat",
                         "unit": "g",
                         "nutrient_id": 645.0
                   },
                   "646": {
-                        "value": 1.505,
+                        "value": 2.03332,
                         "name": "Polyunsaturated Fat",
                         "unit": "g",
                         "nutrient_id": 646.0
                   },
                   "851": {
-                        "nutrient_id": 851,
+                        "value": 0.021599999999999998,
                         "name": "ALA",
-                        "group": "Lipids",
                         "unit": "g",
-                        "value": 0.0
+                        "nutrient_id": 851.0
                   }
             }
       ]
