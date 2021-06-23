@@ -18,9 +18,11 @@ from noms.objects.diary import Diary
 
 #Remove repetitions on calculations, storage, etc. due to reuse/rejigger of code
 
+#Restructure Diary, etc. file structure to be more sensible
+#Rebuild to be able to remove/add food for days
+
 #read in results from JSONs for expansion of existing diaries, etc.
 
-    
 
 
 client = noms.Client("aOcV0EPxHSAA0bBdFB6b6smqiThjul1LLgiHIDGf")
@@ -30,45 +32,53 @@ diary = Diary()
 
 gui = tk.Tk()
 gui.geometry('1200x800')
-gui.title("Noms Calculator")
+gui.title("Noms Calorie Calculator and Food Diary")
 
 
 query = tk.StringVar(gui)
 selection = tk.StringVar(gui)
 amount = tk.StringVar(gui)
 
+#Search Descriptor
+searchfieldLabel = tk.Label(gui, text = "Find your food:")
+searchfieldLabel.grid(column=1, row=1, padx=10, pady=10)
 
-mainLabel = tk.Label(gui, text = "Find your food:")
-mainLabel.grid(column=1, row=1, padx=10, pady=10)
+#Search Field
+searchField = tk.Entry(gui, textvariable = query, width = 50)
+searchField.grid(column=1, row = 2, padx=10, pady=10)
 
-inputfield = tk.Entry(gui, textvariable = query, width = 50)
-inputfield.grid(column=1, row = 2, padx=10, pady=10)
-
+#Search Button
 searchButton = tk.Button(gui, height = 1,
                  width = 5, 
                  text ="Search",
                  command = lambda:foodInput())
 searchButton.grid(column=2,row=2)
 
-comboBox = ttk.Combobox(gui, textvariable = "None", width = 50)
-comboBox.grid(column = 1, row = 3) 
+#Searched items box
+searchResultsBox = ttk.Combobox(gui, textvariable = "None", width = 50)
+searchResultsBox.grid(column = 1, row = 3) 
 
+#Label above amount selector
 amountLabel = tk.Label(gui, text = "No food item currently selected", justify=tk.LEFT)
 amountLabel.grid(column=1, row=10, padx=10, pady=10)
 
-numfield = tk.Entry(gui, textvariable = amount, width = 10)
-numfield.grid(column=1, row = 11, padx=10, pady=10)
+#Input field for amount of searched ingredient
+amountField = tk.Entry(gui, textvariable = amount, width = 10)
+amountField.grid(column=1, row = 11, padx=10, pady=10)
 
+#Button to submit amount of food
 submitButton = tk.Button(gui, height = 1,
                  width = 5, 
                  text ="Submit",
                  command = lambda:submitRequest())
 submitButton.grid(column=2,row=12)
 
+
 foodsLabel = tk.Label(gui, text="No foods entered yet", width =50, height = 30,
                       justify = tk.LEFT,
                       wraplength=300)
 foodsLabel.grid(column=1, row=1, padx=10, pady=10)
+
 
 nutrientsLabel = tk.Label(gui, text="No foods entered yet", width =50, height = 30, 
                           justify= tk.LEFT,
@@ -77,8 +87,8 @@ nutrientsLabel.grid(column=3, row=1, padx=10, pady=10)
 
 
 def chooseOption(event):
-    print("OPTION CHOSEN " + comboBox.get())
-    amountLabel["text"] = "How much of " + comboBox.get() + "? (in grams):"
+    print("OPTION CHOSEN " + searchResultsBox.get())
+    amountLabel["text"] = "How much of " + searchResultsBox.get() + "? (in grams):"
 
 
 def foodInput():
@@ -95,15 +105,16 @@ def foodInput():
         print(result["description"])
         values += [result["description"]]
     
-    comboBox["values"] = values
+    searchResultsBox["values"] = values
     
-    comboBox.current(0)
+    searchResultsBox.current(0)
+    amountLabel["text"] = "How much of " + searchResultsBox.get() + "? (in grams):"
     
-    query.set("")    
+    query.set("")
     
     
 def submitRequest():    
-    new_food_data = client.get_foods({str(search_results.json["items"][comboBox.current()]["fdcId"]):int(amount.get())})
+    new_food_data = client.get_foods({str(search_results.json["items"][searchResultsBox.current()]["fdcId"]):int(amount.get())})
             
     new_meal = NewMeal(new_food_data, int(amount.get()))
     new_meal.show_nutrients()
@@ -126,7 +137,7 @@ def save():
         out_file.close()
     gui.destroy()
 
-comboBox.bind("<<ComboboxSelected>>", chooseOption)
+searchResultsBox.bind("<<ComboboxSelected>>", chooseOption)
 
 gui.protocol("WM_DELETE_WINDOW", save)
 gui.mainloop()
